@@ -1,44 +1,42 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <link href='//fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
-        html,
-        body {
-            height: 100%;
-        }
-        
         body {
             background-image: url('sydney-darker.png');
             background-color: dimgrey;
             display: table;
             margin: 0 auto;
         }
-        
+
         .container {
-            height: 100%;
-            width: 100%;
-            display: table-cell;
-            vertical-align: middle;
+            padding-top: 150px;
         }
-        
-        .centre-box {
-            text-align: center;
-            color: white;
-            padding: 10px;
-            width: 650px;
+
+        @media (min-width: 1200px) {
+            .pull-right-lg {
+                float: right;
+            }
         }
-        
-        .centre-box li {
+        @media (max-width: 767px) {
+            .text-center-sm {
+                text-align: center;
+            }
+        }
+
+        .social-links li {
             display: inline-block;
         }
-        
+
         .social-links img {
             opacity: 0.8;
-            
-            width: 40px;
             padding: 6px;
+            width: 45px;
             margin: 0px;
             vertical-align: top;
             border-radius: 10px;
@@ -47,31 +45,40 @@
             -moz-transition: .5s;
             -webkit-transition: .5s;
             /* ...and now for the proper property */
-            
+
             transition: .5s;
         }
-        
-        .social-links img:hover {
-            opacity: 1.0;
-            filter: none;
-            -webkit-filter: grayscale(0%);
-            width: 48px;
-            padding: 2px;
-            margin: 0px;
-        }   
-        
+        @media (max-width: 767px) {
+            .social-links img {
+                width: 90px;
+            }
+        }
+
+        @media (min-width: 767px) {
+            .social-links img:hover {
+                opacity: 1.0;
+                filter: none;
+                -webkit-filter: grayscale(0%);
+                width: 48px;
+                padding: 2px;
+                margin: 0px;
+            }
+        }
+
         .name {
+            color: white;
             font-size: 42pt;
             font-family: "Lobster", cursive;
             text-shadow: 2px 2px rgba(0, 0, 0, .8);
         }
-        
+
         .tagline {
+            color: white;
             font-size: 16pt;
             font-family: 'Bitter', serif;
             text-shadow: 2px 2px rgba(0, 0, 0, .8);
         }
-        
+
         .profile-pic {
             border-radius: 50%;
             -webkit-border-radius: 50%;
@@ -87,38 +94,48 @@
 <body>
 
     <div class="container">
-        <div class="centre-box">
-            <img class="profile-pic" src="profile.jpg" style="float: left;" />
-            <div class="name"><br />Alister Cordiner</div>
-            <div class="tagline">Software Developer</div>
-            <div>
-                <ul class="social-links">
-                    <li>
-                        <a href="https://www.linkedin.com/in/acordiner" target="_"><img src="linkedin.png" alt="LinkedIn" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://stackoverflow.com/users/393304/del" target="_"><img src="webicon-stackoverflow.png" alt="Stack Overflow" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/acordiner?tab=repositories" target="_"><img src="webicon-github.png" alt="Github" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://code.activestate.com/recipes/users/4174503/" target="_"><img src="activestate.jpg" alt="ActiveState" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://scholar.google.com.au/citations?user=qmIVkWUAAAAJ" target="_"><img src="webicon-google.png" alt="Google Scholar" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/alistercordiner" target="_"><img src="webicon-twitter.png" alt="Twitter" />
-                        </a>
-                    </li>
-                    <ul>
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-2 col-sm-12 text-center-sm">
+                <img class="profile-pic pull-right-lg" src="profile.jpg" />
             </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="name text-center"><br />Alister Cordiner</div>
+                <div class="tagline text-center">Software Developer</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-6 col-sm-12">
+                <div>
+                    <ul class="social-links">
+                        <li>
+                            <a href="https://www.linkedin.com/in/acordiner" target="_"><img src="linkedin.png" alt="LinkedIn" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://stackoverflow.com/users/393304/del" target="_"><img src="webicon-stackoverflow.png" alt="Stack Overflow" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/acordiner?tab=repositories" target="_"><img src="webicon-github.png" alt="Github" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://code.activestate.com/recipes/users/4174503/" target="_"><img src="activestate.jpg" alt="ActiveState" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://scholar.google.com.au/citations?user=qmIVkWUAAAAJ" target="_"><img src="webicon-google.png" alt="Google Scholar" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/alistercordiner" target="_"><img src="webicon-twitter.png" alt="Twitter" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
