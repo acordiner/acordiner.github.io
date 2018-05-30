@@ -9,9 +9,6 @@ stack_of_username: 393304
 twitter_username: alistercordiner
 email: alister@cordiner.net
 
-favicon_img: yes
-favicon_img_path: "imgs/favicon.ico"
-
 # Build settings
 markdown: kramdown
 permalink: pretty
