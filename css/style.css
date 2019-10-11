@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+h1 {
+	font-family: 'Oswald', sans-serif;
+	padding-top: 5rem
+}
+li a {
+    font-size: 45px;
+    padding: 0px 10px;
+    color: gray;
+}
+ul.social-icons li {
+    display: inline;
+}
+.row.fb {
+    padding-left: 34%;
+    padding-top: 5rem;
+}
+.row {
+    text-align: center;
+}
+p {
+    font-family: 'Raleway', sans-serif;
+}
+.fonts {
+    width: 100%;
+    text-align: center;
+    padding-top: 4rem;
+}
+ul.social-icons {
+	padding-left: 0px;
+}
+@media only screen and (max-width: 600px) {
+	h1 {
+        font-size: 31px;
+        padding-bottom: 1rem;
+    }
+    p {
+        padding-bottom: 3rem;
+        font-size: 26px;
+    }
+    li a {
+        font-size: 70px;
+    }
+}
+@media only screen and (min-width : 320px) {
+	p {
+		font-size: 17px;
+	}
+	ul.social-icons {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
